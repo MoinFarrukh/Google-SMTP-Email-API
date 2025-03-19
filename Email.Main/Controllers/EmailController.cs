@@ -16,7 +16,7 @@ namespace Email.Main.Controllers
     public class EmailController : ApiController
     {
         TextLogFileAddress address = new TextLogFileAddress();
-        public string connectionString = "";
+        public string connectionString = "";   // Your DB Connection String
         List<string> sentEmails = new List<string>();
         List<string> failedEmails = new List<string>();
 
