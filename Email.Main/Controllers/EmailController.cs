@@ -43,7 +43,12 @@ namespace Email.Main.Controllers
                     return BadRequest("No pending emails found.");
 
                 string senderEmail = "";    // enter your email from where you want to send emails
-                string senderPassword = "";    // enter password
+                string senderPassword = "";    // enter Google App password
+
+                                               //Go to Google App Passwords.
+                                               //Select Mail as the app and Device as your choice.
+                                               //Click Generate and copy the generated password.
+                                               //Use this password in your SMTP configuration.
 
                 sentEmails.Clear();  // Ensure lists are empty before processing
                 failedEmails.Clear();
